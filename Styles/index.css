@@ -1,9 +1,9 @@
-  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
          background-color: #DDC9D3;
-         margin:auto;
+         text-align: center;
        
         
 }
@@ -12,12 +12,12 @@ body {
          list-style-type: none;
          justify-content: space-around;
          font-family: 'Open Sans';
-
    }
     h1 {
         color: #645853;
         font-family: 'Josefin Sans';
         line-height:9px;
+        margin:18px;
 }
    a:hover {
   color: #CC1212;
@@ -27,6 +27,5 @@ body {
 a {
   color:#1E3D00;
   font-size:2.1em;
-  text-decoration: none;
  
 }
