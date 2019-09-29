@@ -5,7 +5,7 @@
 
     li {
          list-style-type: none;
-         justify-content: space-around;
+         justify-content: center;
          margin: auto;
    }
     header {
