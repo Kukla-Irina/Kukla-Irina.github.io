@@ -17,7 +17,7 @@ body {
         color: #645853;
         font-family: 'Josefin Sans';
         line-height:9px;
-        margin:18px;
+         padding: 10%;
 }
    a:hover {
   color: #CC1212;
