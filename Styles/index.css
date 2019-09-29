@@ -1,9 +1,11 @@
-  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+    
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
          background-color: #DDC9D3;
-         margin: auto;
+       
         
 }
 
@@ -25,7 +27,6 @@ body {
 
 a {
   color:#1E3D00;
-  font-size:1.1em;
-  padding: 1em .6em;
+  font-size:2.1em;
  
 }
