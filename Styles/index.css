@@ -1,9 +1,10 @@
-  
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
          background-color: #DDC9D3;
          margin: auto;
-         justify-content: space-around;
+        
 }
 
     li {
@@ -17,6 +18,13 @@ body {
         margin:18px;
 }
    a:hover {
-  color: #C49435;
+  color: #CC1212;
   font-style:italic;
+}
+
+a {
+  color:#1E3D00;
+  font-size:1.1em;
+  padding: 1em .6em;
+ 
 }
