@@ -3,15 +3,14 @@
 
 body {
          background-color: #DDC9D3;
-        margin: auto;
+         margin: auto;
 }
 
     li {
          list-style-type: none;
          justify-content: space-around;
-         margin: auto;
    }
-    header {
+    h1 {
         color: #645853;
         font-family: 'Josefin Sans';
         line-height:9px;
