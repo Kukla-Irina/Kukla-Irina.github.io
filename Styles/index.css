@@ -4,9 +4,13 @@
 body {
          background-color: #DDC9D3;
          text-align: center;
-       
-        
-}
+       }
+ ul {
+          border: 10px outset #CC1212;
+          background: #c5a3c1;
+          padding: 15px;
+          
+        }
 
     li {
          list-style-type: none;
