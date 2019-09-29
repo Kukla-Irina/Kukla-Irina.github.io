@@ -4,6 +4,7 @@
 body {
          background-color: #DDC9D3;
          margin: auto;
+         justify-content: space-around;
 }
 
     li {
