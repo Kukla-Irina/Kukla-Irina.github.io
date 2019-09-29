@@ -7,4 +7,9 @@
          justify-content: space-around;
          margin: auto;
    }
-
+    h1 {
+        color: #645853;
+        font-family: 'Josefin Sans';
+        line-height:9px;
+        margin:18px;
+}
