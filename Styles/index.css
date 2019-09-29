@@ -8,7 +8,7 @@ body {
 
     li {
          list-style-type: none;
-         justify-content: center;
+         justify-content: space-around;
          margin: auto;
    }
     header {
@@ -16,4 +16,8 @@ body {
         font-family: 'Josefin Sans';
         line-height:9px;
         margin:18px;
+}
+   a:hover {
+  color: #C49435;
+  font-style:italic;
 }
