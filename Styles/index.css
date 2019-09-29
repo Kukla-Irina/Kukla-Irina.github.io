@@ -10,6 +10,7 @@ body {
     li {
          list-style-type: none;
          justify-content: space-around;
+         font-family: 'Open Sans';
    }
     h1 {
         color: #645853;
