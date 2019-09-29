@@ -4,6 +4,8 @@
 body {
          background-color: #DDC9D3;
          text-align: center;
+          width:80%;
+          margin:auto;
        }
  ul {
           border: 10px outset #CC1212;
