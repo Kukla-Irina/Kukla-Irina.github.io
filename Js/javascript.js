@@ -62,5 +62,5 @@ var power = Math.pow(2, i);
 res += power+"<br>"; 
 }
 
-document.getElementById("outputDiv").innerHTML = res;
+document.getElementById("outputPow").innerHTML = res;
 }
