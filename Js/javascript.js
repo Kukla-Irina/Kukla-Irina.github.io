@@ -51,3 +51,16 @@ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPa
     return b;
 
 }
+
+function Powers() {
+var res = "";
+var t = parseFloat(document.getElementById('number').value); 
+for (i = 0; i <= t; i++) {
+
+var power = Math.pow(2, i);
+
+res += power+"<br>"; 
+}
+
+document.getElementById("outputDiv").innerHTML = res;
+}
