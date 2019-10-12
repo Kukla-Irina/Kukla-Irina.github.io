@@ -1,5 +1,37 @@
-#h {
-  background-color:#578248;
-  padding: 1em;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+         background-color: #DDC9D3;
+         text-align: center;
+          width:80%;
+          margin:auto;
+       }
+ ul {
+          border: 10px outset #CC1212;
+          background: #c5a3c1;
+          padding: 15px;
+          
+        }
+
+    li {
+         list-style-type: none;
+         justify-content: space-around;
+         font-family: 'Open Sans';
+   }
+    h1 {
+        color: #645853;
+        font-family: 'Josefin Sans';
+        line-height:9px;
+         padding: 3%;
 }
+   a:hover {
+  color: #CC1212;
+  font-style:italic;
+}
+
+a {
+  color:#1E3D00;
+  font-size:2.1em;
+ text-decoration: none;
+} 
