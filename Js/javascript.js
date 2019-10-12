@@ -54,7 +54,7 @@ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPa
 
 function Powers() {
 var res = "";
-var t = parseFloat(document.getElementById('number').value); 
+var t = parseFloat(document.getElementById('pow').value); 
 for (i = 0; i <= t; i++) {
 
 var power = Math.pow(2, i);
