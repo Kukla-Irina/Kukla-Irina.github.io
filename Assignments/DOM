@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>DOM</title>
+</head>
+<body>
+<button type="button" onclick="applyRed()">Let it be red</button>
+<button type="button" onclick="applyMoreRed()">More red!</button>
+<button type="button" onclick="applyBlue()">Let's have some blue</button>
+<button type="button" onclick="applyCLone()">Clone me</button>
+<button type="button" onclick="applyMark()">Mark some text</button>
+<button type="button" onclick="applyUndo()">Undo marking</button>
+<button type="button" onclick="applyBonus()">Bonus fact</button>
+<button type="button" onclick="applyNice()">Make it look nice</button>
+
+<header><h1>23 INTERESTING FACTS ABOUT RUSSIA</h1></header>
+
+<main>
+	<strong>
+	<p>1. Russia is the world’s largest country by area. It covers 17 million sq km (6.6 million sq miles), accounting for more than one ninth of Earth’s terrestrial area.
+(Source: BBC)</p>
+
+<div>2. Russia has the world’s longest railway. The Trans-Siberian spans nearly the whole country, departing Moscow in the west and travelling to Vladivostok in the east. The entire journey is 9,200km long (5,700mi) and would take 152 hours and 27 minutes to complete non-stop.
+(Source: The Telegraph)</div>
+
+<p>3. Russia lies in both Europe and Asia: one quarter of its territory is in Europe and three quarters in Asia. Notably, only 22% of the population resides in the Asian section.
+(Source: World Atlas)</p>
+
+<div>4. Moscow is home to more billionaires than almost any other city. It has 73 billionaires and ranks behind only New York (82) and Hong Kong (75).
+(Source: Forbes)</div>
+
+<p>5. Russians are the world’s fourth biggest drinkers behind Belarus, Moldova and Lithuania. This may explain why one out of five male deaths in Russia are alcohol related.
+(Source: The Telegraph)</p>
+
+<div>6. Until 2011, anything with less than 10% alcohol was considered a foodstuff – and not alcohol.
+(Source: BBC)</div>
+
+<p>7. In the vault beneath the Monument to the Heroic Defenders of Leningrad, a metronome ticks steadily on. It is the sound that played out on local radio during the siege to assure residents the city was still alive.
+(Source: Lonely Planet)</p>
+
+<div>8. One of our favourite interesting facts about Russia is that there is a restaurant in Moscow staffed entirely by twins. The Twin Stars diner employs identically-dressed siblings and takes inspiration from 1964 Soviet film Kingdom of Crooked Mirrors.
+(Source: BBC)</div>
+
+<p>9. St Basil’s Cathedral in Moscow was created by Postnik Yakovlev. Legend has it that Ivan the Terrible blinded him afterwards, so he couldn’t build anything to rival it.
+(Source: Lonely Planet)</p>
+
+<div>10. Russia has more time zones than any other country in the world. It used to have 11, but this was culled in 2010 to ‘only’ nine.
+(Source: Reuters)</div>
+
+<p>11. Russia’s Lake Baikal is the deepest in the world and contains about 20% of the world’s unfrozen freshwater.
+(Source: Britannica)</p>
+
+<div>12. Russian leaders have some interesting creative pursuits. Mikhail Gorbachev recorded an album of romantic ballads while current leader Vladimir Putin has a judo DVD.
+(Source: The Guardian, The Guardian)</div>
+
+<p>13. Putin once saved a TV crew from a Siberian tiger… but later acknowledged that the rescue was staged. Other of his documented publicity stunts include tagging whales and frolicking with a rare snow leopard.
+(Source: BBC)></p>
+
+<div>14. Russia is home to Oymyakon, the coldest inhabited place on Earth. On 6th February 1933, its weather station recorded a temperature of -67.8 °C.
+(Source: The Telegraph)</div>
+
+<p>15. In 1908, the Russian Olympic team arrived in London 12 days late because it was still using the Julian calendar.
+(Source: The Human Organization of Time)</p>
+
+<div>16. Russia has one of the deadliest lakes in the world. Lake Karachay near the Russian Urals city of Chelyabinsk is a dumping ground for nuclear waste and is so radioactive that standing beside it for an hour would almost certainly kill you.
+(Source: BBC)</div>
+
+<p>17. Russia shares a border with 14 countries: Norway, Finland, Estonia, Latvia, Lithuania, Poland, Belarus, China, Ukraine, Georgia, Azerbaijan, Kazakhstan, Mongolia and North Korea. No other country has as many borders.
+(Source: The Telegraph)</p>
+
+<div>18. Russia is home to the highest point in Europe. Mount Elbrus stands at 5,642m (18,510 ft) above sea level and was climbed by Atlas & Boots’ very own Peter Watson earlier this year.
+(Source: BBC)</div>
+
+<p>19. Russia is almost as big as Pluto: 17 million sq km compared to Pluto at 17.6 million sq km.
+(Source: NASA)</p>
+
+<div>20. Russia and Japan have yet to sign a peace treaty to end World War II thanks to a dispute over the Kuril Islands, which stretch from the Japanese island of Hokkaido to the southern tip of Russia’s Kamchatka Peninsula.
+(Source: BBC)</div>
+
+<p>21. Sputnik, the world’s first satellite, was launched by the Soviet Union in 1957.
+(Source: NASA)</p>
+
+<div>22. One of the most interesting facts about Russia is that, at their closest point, Russia and the US are a mere 4km (2.5mi) apart. Big Diomede Island is a part of Russia while Little Diomede Island is a part of the American state of Alaska.
+(Source: Merriam-Webster’s Collegiate Encyclopedia)</div>
+
+<p>23. Russia is home to the oldest plant ever to be regenerated. It has been grown from 32,000-year-old seeds!
+(Source: National Geographic)</p>
+	</strong> 
+</main>       
+</body>       
+</html>
