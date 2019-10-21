@@ -22,13 +22,13 @@ function applyRed() {
 	}
 
 	function applyMark() {
-	var p = document.querySelector('p');
-	p.setAttribute('mark', '')
+	var div = document.querySelector('div');
+	div.setAttribute('mark', '')
 	}
 
 	function applyUndo() {
-	var p = document.querySelector('p');
-	p.removeAttribute('mark');
+	var div = document.querySelector('div');
+	div.removeAttribute('mark');
 
 	}
 
