@@ -23,12 +23,12 @@ function applyRed() {
 
 	function applyMark() {
 	var div = document.querySelector('div');
-	div.setAttribute('mark', '')
+	div.setAttribute('contenteditable', '')
 	}
 
 	function applyUndo() {
 	var div = document.querySelector('div');
-	div.removeAttribute('mark');
+	div.removeAttribute('contenteditable');
 
 	}
 
