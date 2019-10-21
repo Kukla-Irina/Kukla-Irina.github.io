@@ -1,4 +1,3 @@
-1
 function applyRed() {
     var firstDiv = document.querySelector('div');
     firstDiv.style.color = 'red';
@@ -22,13 +21,13 @@ function applyRed() {
 	}
 
 	function applyMark() {
-	var div = document.querySelector('div');
-	div.setAttribute('contenteditable', '')
+	var main = document.querySelector('main');
+	main.setAttribute('style', 'color: green; font-size: 2em;' );
 	}
 
 	function applyUndo() {
-	var div = document.querySelector('div');
-	div.removeAttribute('contenteditable');
+	var main = document.querySelector('main');
+	main.removeAttribute('style');
 
 	}
 
