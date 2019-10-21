@@ -2,7 +2,6 @@
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
-         background-color: #DDC9D3;
          text-align: center;
           width:60%;
           margin:auto;
@@ -26,16 +25,8 @@ a {
 } 
 
 
- td {
-          
-          justify-content: space-around;
-         font-family: 'Open Sans';
-          background: #c5a3c1;
-          padding: 15px;
-          
-        }
-.pow {
+.mark {
       font-family: 'Open Sans';
-      margin: 10%;
+      font-size:3em;
 
 }
