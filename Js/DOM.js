@@ -47,3 +47,8 @@ function applyRed() {
 	em.textContent = 'Ooops. At least it looks nice now.';
 	main.replaceChild(em, strong);
 	}
+
+   	function clearAll() {
+            window.localStorage.clear();
+            location.reload();
+        }
