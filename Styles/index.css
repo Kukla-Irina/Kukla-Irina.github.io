@@ -2,14 +2,13 @@
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
-         background-color: #DDC9D3;
+        
          text-align: center;
           width:80%;
           margin:auto;
        }
  ul {
           border: 10px outset #CC1212;
-          background: #c5a3c1;
           padding: 15px;
           
         }
@@ -32,6 +31,6 @@ body {
 
 a {
   color:#1E3D00;
-  font-size:2.1em;
+  font-size:1.5em;
  text-decoration: none;
 } 
