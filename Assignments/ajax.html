@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+  body {
+          background-color: #0A090C;
+         text-align: center;
+          width:80%;
+          margin:auto;
+          padding: 5%;
+          font-color: #726789;
+       }
+ 
+    h2 {
+        color: #726789;
+        font-family: 'Josefin Sans';
+        line-height:9px;
+         padding: 3%;
+       }
+   .f {
+        color: #BCBBBF;
+        font-family: 'Josefin Sans';
+        line-height:15px;
+         padding: 3%;
+       }
+
+    </style>
+  </head>
+
+  <body>
+<button type="button" onclick="loadXMLDoc()">Request</button>
+<div class = 'f'><h2>Requested objects:</h2><div id="outputn"></div><br>
+
+</div>
+  </body>
+
+    <script>
+      function loadXMLDoc() { 
+     var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('GET', 'https://kukla-irina.github.io/Assignments/ajax.txt', false);
+    xmlhttp.send();
+    if (xmlhttp.status != 200) {
+    alert( xmlhttp.status + ': ' + xmlhttp.statusText );
+} else {
+  var xmlhttp = xmlhttp.responseText;
+        document.getElementById('outputn').innerHTML = xmlhttp;
+      };
+    }
+    </script>
+
+
+</html>
