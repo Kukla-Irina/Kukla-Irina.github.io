@@ -34,24 +34,52 @@
   </head>
 
   <body>
-<button type="button" onclick="loadXMLDoc()">Request</button>
+<button type="button" onclick="loadXML()">Request</button>
 <div class = 'f'><h2>Requested objects:</h2><div id="outputn"></div><br>
 
 </div>
   </body>
 
     <script>
-      function loadXMLDoc() { 
-     var xmlhttp = new XMLHttpRequest();
+   /* function loadXML() { 
+    let xmlhttp = new XMLHttpRequest();
     xmlhttp.open('GET', 'https://kukla-irina.github.io/Assignments/ajax.txt', false);
     xmlhttp.send();
     if (xmlhttp.status != 200) {
     alert( xmlhttp.status + ': ' + xmlhttp.statusText );
-} else {
-  var xmlhttp = xmlhttp.responseText;
-        document.getElementById('outputn').innerHTML = xmlhttp;
-      };
+    } else {
+    let xmlhttp = xmlhttp.responseText;
+    document.getElementById('outputn').innerHTML = json;
+   } */
+
+  function loadXML() {
+
+    let xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var animal = JSON.parse(this.responseText);
+            Info(animal);
+        } else {
+            document.getElementById("outputn").innerHTML = "...";
+        }
+    };
+
+    xmlhttp.open("GET", "https://kukla-irina.github.io/Assignments/ajax.txt", true);
+    xmlhttp.send();
+}
+function Info(animal) {
+    var output = "";
+
+    for (var i = 0; i < animal.length; i++) {
+        output += animal[i].name + "<br />";
+        output += animal[i].species + "<br />";
+        output += animal[i].food + "<br />";
+        output += "<br />";
     }
+
+    document.getElementById("outputn").innerHTML = output;
+}
     </script>
 
 
