@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The list of people</title>
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+  body {
+          background-color: #0A090C;
+         text-align: center;
+          width:80%;
+          margin:auto;
+          padding: 5%;
+          font-color: #726789;
+       }
+ 
+    h2 {
+        color: #726789;
+        font-family: 'Josefin Sans';
+        line-height:9px;
+         padding: 3%;
+       }
+
+    #form {
+        padding: 5%;
+    }
+
+    #output {
+        color: #726789;
+    }
+    </style>
+</head>
+<body onload="getData()">
+    <h2>Put some names</h2>
+    <form id="form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="lastname" placeholder="Last name">
+    <button type="submit" class="click">Add infomation</button>
+    <button type="button" onclick="clearAll()">Clear</button>
+    </form>
+    <div id="output">
+    </div><script>
+
+document.getElementById('form').addEventListener('submit', add);
+
+function add(info) {
+    var name = document.getElementById('name').value;
+    var lastname = document.getElementById('lastname').value;
+
+    var names = {
+        name: name,
+        lastname: lastname
+    };
+
+
+    if (localStorage.getItem('namesItems') === null) {
+        var namesItems = [];
+        namesItems.push(names);
+        localStorage.setItem('namesItems', JSON.stringify(namesItems));
+    } else {
+        var namesItems = JSON.parse(localStorage.getItem('namesItems'));
+        namesItems.push(names);
+        localStorage.setItem('namesItems', JSON.stringify(namesItems));
+    }
+
+    getData();
+
+    info.preventDefault();
+}
+
+function getData() {
+    var namesItems = JSON.parse(localStorage.getItem('namesItems'));
+    var results = document.getElementById('output');
+
+    results.innerHTML = '';
+
+    for (let i = 0; i < namesItems.length; i++) {
+        var name = namesItems[i].name;
+        var lastname = namesItems[i].lastname;
+
+        results.innerHTML += name + ' ' + lastname + '</br>';
+    }
+}
+function clearAll() {
+            window.localStorage.clear();
+            location.reload();
+        }
+</script>
+</body>
+</html>
