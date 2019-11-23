@@ -66,9 +66,10 @@
 </body>
 
 <script>
-  field.ontouchmove = function(e) {
+  document.getElementById("field").addEventListener("touchenter", event);
+  function event() {
 
-      let fieldCoords = this.getBoundingClientRect();
+     let fieldCoords = this.getBoundingClientRect();
       let bugCoords = {
         top: event.clientY - fieldCoords.top - field.clientTop - bug.clientHeight / 2,
         left: event.clientX - fieldCoords.left - field.clientLeft - bug.clientWidth / 2
@@ -84,7 +85,7 @@
       bug.style.left = bugCoords.left + 'px';
       bug.style.top = bugCoords.top + 'px';
     }
-    
+
   </script>
 
 </html>
