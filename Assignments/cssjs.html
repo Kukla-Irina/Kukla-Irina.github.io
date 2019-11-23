@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>CSS-JS</title>
+<style>
+      
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+  body {
+          background-color: #4F4B48;
+         text-align: center;
+          width:80%;
+          margin:auto;
+          font-color: #726789;
+       }
+ 
+    h2,h1 {
+        color: #726789;
+        font-family: 'Josefin Sans';
+         padding: 5%;
+       }
+   .f {
+        color: #BCBBBF;
+        font-family: 'Josefin Sans';
+        line-height:15px;
+         padding: 3%;
+       }
+
+    </style>
+</head>
+<h1>Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript</h1>
+<body>
+  <button type="button" onclick="clearAll()">Clear</button><hr><br/><br/><br/><br/><br/>
+ <div id="digit"><div id="bats"><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a><a><img src="http://s20.rimg.info/5a06350c142e5ebe440cfc845117e3de.gif" ></a></div></div>
+
+<button id="color">Click</button>
+<button id="growing">Click</button> <br>
+<img id="heart" src="https://avatanplus.com/files/resources/mid/58c19acfcce7715ab444bbdf.png"><br/>
+<div id="heart1"></div><br/>
+
+</body> 
+<style>
+  #color {
+    transition-property: background-color;
+    transition-duration: 4s;
+  }
+  #growing {
+  transition: font-size 3s, color 2s, font-style 3s;
+}
+#digit {
+  width: 100em;
+
+  font: 30px monospace;
+  cursor: pointer;
+}
+
+#bats {
+  display: block;
+}
+
+#bats.animate {
+  transform: translate(-100%);
+  transition-property: transform;
+  transition-duration: 9s;
+  transition-timing-function: linear;
+}
+
+#heart {
+  position: relative;
+  cursor: pointer;
+  width: 230px;
+  height: 160px;
+  left: 0;
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+</style>
+
+<script>
+color.onclick = function() {
+    this.style.backgroundColor = 'magenta';
+  }
+  growing.onclick = function() {
+  this.style.fontSize = '36px';
+  this.style.color = 'red';
+  this.style.fontStyle = 'italic';
+}
+bats.onclick = function() {
+  bats.classList.add('animate');
+}
+function clearAll() {
+            window.localStorage.clear();
+            location.reload();
+        }
+heart.onclick = function () {
+	this.style.left='450px';
+}
+
+</script>          
+</html>
