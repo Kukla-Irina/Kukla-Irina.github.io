@@ -32,7 +32,7 @@
        }
 
          #field {
-      width: 1100px;
+      width: 800px;
       height: 600px;
       overflow: hidden;
       cursor: pointer;
@@ -66,10 +66,10 @@
 </body>
 
 <script>
-  document.getElementById("field").addEventListener("touchenter", event);
-  function event() {
+  document.getElementById("field").ontouchstart = move;
+  function move(event) {
 
-     let fieldCoords = this.getBoundingClientRect();
+      let fieldCoords = this.getBoundingClientRect();
       let bugCoords = {
         top: event.clientY - fieldCoords.top - field.clientTop - bug.clientHeight / 2,
         left: event.clientX - fieldCoords.left - field.clientLeft - bug.clientWidth / 2
