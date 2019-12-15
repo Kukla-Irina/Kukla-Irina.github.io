@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Project</title>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+  [id^="ref"] {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background: #297373;
+  font-family: "Concert One";
+  color: #FF8552;
+}
+nav {
+  display:flex;
+}
+  body {
+    background-color: #E6E6E6;
+    text-align: center;
+    width:80%;
+    margin:auto;
+    padding: 5%;
+    justify-content: center;
+
+  }
+  header {
+    background-color: #297373;
+    height: 120px;
+  }
+  h1 {
+    font-family: "Dancing Script";
+    color: #215B5B;
+    line-height:50px;
+    margin:18px;
+  }
+  #head1 {
+    background-color: #FF8552;
+
+  }
+
+
+h1 {
+ 
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+h1:before {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+h1:hover, h1:focus, h1:active {
+  color: #E6E6E6;
+}
+
+h2 {
+ 
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+h2:before {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+h2:hover, h2:focus, h2:active {
+  color: #E6E6E6;
+}
+
+#color1 {
+ 
+  margin-top: 30px;
+  transition-duration: 0.3s;
+}
+
+#color1:hover {
+   transition-duration: 0.3s;
+  transform: scale(1.5);
+  transition-timing-function: ease-out;
+  }
+
+
+#refVal {
+ 
+  margin-top: 30px;
+  transition-duration: 0.3s;
+}
+
+#refVal:hover {
+   transition-duration: 0.3s;
+  transform: scale(1.5);
+  transition-timing-function: ease-out;
+  }
+
+  #body1 {
+    background-color: #FFCDB7;
+    font-family: "Concert One";
+    color: #215B5B;
+  }
+
+  #head21 {
+    background-color: #39A0A0;
+    font-family: "Dancing Script";
+    color: #215B5B;
+  }
+
+  #head22 {
+    background-color: #43BABA;
+    font-family: "Dancing Script";
+    color: #215B5B;
+  }
+
+  #head23 {
+    background-color: #4EDBDB;
+    font-family: "Dancing Script";
+    color: #215B5B;
+  }
+
+  #head24 {
+    background-color: #59F7F7;
+    font-family: "Dancing Script";
+    color: #215B5B;
+  }
+
+  #body21, #body22, #body23, #body24 {
+    background-color: #FFCDB7;
+    font-family: "Concert One";
+    color: #215B5B;
+  }
+
+#refShades {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  background: #297373;
+  transition-property: color;
+  transition-duration: 0.3s;
+  border-radius: 3em;
+}
+#refShades:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFCDB7;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  border-radius: 3em;
+}
+#refShades:hover, #refShades:focus, #refShades:active {
+  color: #297373;
+  border-radius: 3em;
+}
+#refShades:hover:before, #refShades:focus:before, #refShades:active:before {
+  transform: scaleY(1);
+}
+
+#refColor {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+   border-radius: 3em;
+}
+#refColor:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFCDB7;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+   border-radius: 3em;
+}
+#refColor:hover, #refColor:focus, #refColor:active {
+  color: #297373;
+   border-radius: 3em;
+}
+#refColor:hover:before, #refColor:focus:before, #refColor:active:before {
+  transform: scaleX(1);
+}
+
+table {
+  margin: auto;
+  padding: 30px;
+
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+    <div id="refShades" onclick="ShowShades()">Shades</div>
+    <div id="refColor" onclick="ShowColor()">Lightness</div>
+    </nav>
+  </header>
+  <main>
+    <div id="head1"><h1>Choose your color</h1></div>
+    
+     <div id="body1"><input style="width: 200px; height: 80px;" id="color1" name="Color Picker" type="color" /><br>
+      <div id="refVal" onclick="ColVal()" style="border-radius: 3em;">Get color value</div><br>
+    <table>
+  <tr>
+    <td>HEX:</td><td><div id="output1"></div></td>
+  </tr>
+  <tr>
+    <td>RGB:</td><td><div id="output2"></div></td>
+  </tr>
+  <tr>
+    <td>HSL:</td><td><div id="output3"></div></td>
+  </tr>
+</table>
+
+
+
+     </div>
+     
+      <div id="head23" style="display:none;"><h2>Shades</h2></div>
+          <div id="body23" style="display:none;">
+<div id ="output31">1</div><br>
+<div id ="output32">2</div><br>
+<div id ="output33">3</div><br>
+<div id ="output34">4</div><br>
+<div id ="output35">5</div><br>
+<div id ="output36">6</div><br>
+<div id ="output37">7</div><br>
+<div id ="output38">8</div><br>
+<div id ="output39">9</div><br>
+<div id ="output40">10</div><br>
+<div id ="output401">10</div><br>
+          </div>
+      <div id="head24" style="display:none;"><h2>Lightness</h2></div>
+          <div id="body24" style="display:none;">
+<div id ="output41">1</div><br>
+<div id ="output42">2</div><br>
+<div id ="output43">3</div><br>
+<div id ="output44">4</div><br>
+<div id ="output45">5</div><br>
+<div id ="output46">6</div><br>
+<div id ="output47">7</div><br>
+<div id ="output48">8</div><br>
+<div id ="output49">9</div><br>
+<div id ="output50">10</div><br>
+<div id ="output501">10</div><br>
+</div>
+  </main>
+  <footer></footer>
+</body> 
+<script>
+
+function ShowShades() {
+    document.getElementById('head24').style.display = "none";
+    document.getElementById('body24').style.display = "none";
+    document.getElementById('head23').style.display = "block";
+    document.getElementById('body23').style.display = "block";
+}
+
+function ShowColor() {
+    document.getElementById('head23').style.display = "none";
+    document.getElementById('body23').style.display = "none";
+    document.getElementById('head24').style.display = "block";
+    document.getElementById('body24').style.display = "block";
+}
+
+function hsl(r,g,b) { 
+  r /= 255;
+  g /= 255;
+  b /= 255;
+  let cmin = Math.min(r,g,b),
+      cmax = Math.max(r,g,b),
+      delta = cmax - cmin,
+      h = 0,
+      s = 0,
+      l = 0;
+
+  if (delta == 0)
+    h = 0;
+  else if (cmax == r)
+    h = ((g - b) / delta) % 6;
+  else if (cmax == g)
+    h = (b - r) / delta + 2;
+  else
+    h = (r - g) / delta + 4;
+
+  h = Math.round(h * 60);
+
+  if (h < 0)
+    h += 360;
+
+  l = (cmax + cmin) / 2;
+  s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+  s = +(s * 100).toFixed(1);
+  l = +(l * 100).toFixed(1);
+
+  var j = h + ", " + s + "%, " + l + "%";
+
+
+document.getElementById("output3").innerHTML = j;
+
+}
+
+
+
+function ColVal(){
+   var Inp = document.getElementById("color1");
+     var h = Inp.value;
+    
+     
+      
+
+      var isPct = 0;
+  let r = 0, g = 0, b = 0;
+  isPct = isPct === true;
+
+  if (h.length == 4) {
+    r = "0x" + h[1] + h[1];
+    g = "0x" + h[2] + h[2];
+    b = "0x" + h[3] + h[3];
+    
+  } else if (h.length == 7) {
+    r = "0x" + h[1] + h[2];
+    g = "0x" + h[3] + h[4];
+    b = "0x" + h[5] + h[6];
+  }
+    
+  if (isPct) {
+    r = +(r / 255 * 100).toFixed(1);
+    g = +(g / 255 * 100).toFixed(1);
+    b = +(b / 255 * 100).toFixed(1);
+  }
+
+  document.getElementById("output1").innerHTML = h;
+  var f = isPct ? r + "%," + g + "%," + b + "%" : +r + ", " + +g + ", " + +b;
+  document.getElementById("output2").innerHTML = f;
+  hsl(r,g,b);
+
+ 
+  increase_brightness = function(color,percent){
+
+    var ctx = document.createElement('canvas').getContext('2d');
+
+
+    ctx.fillStyle = color;
+    ctx.fillRect(0,0,1,1);
+
+    var color = ctx.getImageData(0,0,1,1);
+    var r = color.data[0] + Math.floor( percent / 100 * 255 );
+    var g = color.data[1] + Math.floor( percent / 100 * 255 );
+    var b = color.data[2] + Math.floor( percent / 100 * 255 );
+
+    return 'rgb('+r+','+g+','+b+')';
+
+
+}
+
+var Inp = document.getElementById("color1");
+     var h = Inp.value;
+
+var original = document.getElementById('output41');
+var brighter1 = document.getElementById('output42');
+var brighter2 = document.getElementById('output43');
+var brighter3 = document.getElementById('output44');
+var brighter4 = document.getElementById('output45');
+var brighter5 = document.getElementById('output46');
+var brighter6 = document.getElementById('output47');
+var brighter7 = document.getElementById('output48');
+var brighter8 = document.getElementById('output49');
+var brighter9 = document.getElementById('output50');
+var brighter10 = document.getElementById('output501');
+
+original.innerHTML = h;
+brighter1.innerHTML = increase_brightness(h,10);
+brighter2.innerHTML = increase_brightness(h,20);
+brighter3.innerHTML = increase_brightness(h,30);
+brighter4.innerHTML = increase_brightness(h,40);
+brighter5.innerHTML = increase_brightness(h,50);
+brighter6.innerHTML = increase_brightness(h,60);
+brighter7.innerHTML = increase_brightness(h,70);
+brighter8.innerHTML = increase_brightness(h,80);
+brighter9.innerHTML = increase_brightness(h,90);
+brighter10.innerHTML = increase_brightness(h,100);
+
+original.style.backgroundColor = h;
+brighter1.style.backgroundColor = increase_brightness(h,10);
+brighter2.style.backgroundColor = increase_brightness(h,20);
+brighter3.style.backgroundColor = increase_brightness(h,30);
+brighter4.style.backgroundColor = increase_brightness(h,40);
+brighter5.style.backgroundColor = increase_brightness(h,50);
+brighter6.style.backgroundColor = increase_brightness(h,60);
+brighter7.style.backgroundColor = increase_brightness(h,70);
+brighter8.style.backgroundColor = increase_brightness(h,80);
+brighter9.style.backgroundColor = increase_brightness(h,90);
+brighter10.style.backgroundColor = increase_brightness(h,100);
+
+var original = document.getElementById('output31');
+var brighter1 = document.getElementById('output32');
+var brighter2 = document.getElementById('output33');
+var brighter3 = document.getElementById('output34');
+var brighter4 = document.getElementById('output35');
+var brighter5 = document.getElementById('output36');
+var brighter6 = document.getElementById('output37');
+var brighter7 = document.getElementById('output38');
+var brighter8 = document.getElementById('output39');
+var brighter9 = document.getElementById('output40');
+var brighter10 = document.getElementById('output401');
+
+original.innerHTML = h;
+brighter1.innerHTML = increase_brightness(h,10);
+brighter2.innerHTML = increase_brightness(h,20);
+brighter3.innerHTML = increase_brightness(h,30);
+brighter4.innerHTML = increase_brightness(h,40);
+brighter5.innerHTML = increase_brightness(h,50);
+brighter6.innerHTML = increase_brightness(h,60);
+brighter7.innerHTML = increase_brightness(h,70);
+brighter8.innerHTML = increase_brightness(h,80);
+brighter9.innerHTML = increase_brightness(h,90);
+brighter10.innerHTML = increase_brightness(h,100);
+
+original.style.backgroundColor = h;
+brighter1.style.backgroundColor = increase_brightness(h,-10);
+brighter2.style.backgroundColor = increase_brightness(h,-20);
+brighter3.style.backgroundColor = increase_brightness(h,-30);
+brighter4.style.backgroundColor = increase_brightness(h,-40);
+brighter5.style.backgroundColor = increase_brightness(h,-50);
+brighter6.style.backgroundColor = increase_brightness(h,-60);
+brighter7.style.backgroundColor = increase_brightness(h,-70);
+brighter8.style.backgroundColor = increase_brightness(h,-80);
+brighter9.style.backgroundColor = increase_brightness(h,-90);
+brighter10.style.backgroundColor = increase_brightness(h,-100);
+ 
+}
+
+
+  
+
+
+</script>          
+</html>
