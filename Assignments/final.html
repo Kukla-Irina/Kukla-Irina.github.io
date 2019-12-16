@@ -28,6 +28,16 @@ nav {
     margin:auto;
     padding: 5%;
     justify-content: center;
+    animation: colorg 10s linear infinite normal;
+
+  }
+
+  @keyframes colorg {
+
+    0% {background-color: #E6E6E6;}
+    33% {background-color: #D6AF95;}
+    73% {background-color: #D1FFE8;}
+    100% {background-color: #E6E6E6;}
 
   }
   header {
@@ -82,7 +92,16 @@ h2:hover, h2:focus, h2:active {
    transition-duration: 0.3s;
   transform: scale(1.5);
   transition-timing-function: ease-out;
+  cursor: pointer;
+  animation: br 0.1s linear infinite alternate;
   }
+
+  @keyframes br {
+
+  0% {box-shadow: 0 0 1px rgba(0, 0, 0, 0);}
+  100% {box-shadow: 0 0 8px rgba(230, 5, 0, 100);}
+}
+
 
 
 #refVal {
@@ -96,6 +115,7 @@ h2:hover, h2:focus, h2:active {
   transform: scale(1.5);
   transition-timing-function: ease-out;
   }
+
 
   #body1 {
     background-color: #FFCDB7;
@@ -207,9 +227,35 @@ table {
 
 }
 
+#name {
+  color: #215B5B;
+  
+    font-family: "Concert One";
+    height: 30px;
+    position: relative;
+    animation: bounce 3s ;
+    background-color: #FFB493;
+     width: 20%;
+
+}
+
+@keyframes bounce {
+  0% {
+    margin-right: 100%;
+    width: 100%; 
+  }
+
+  100% {
+    margin-right: 0%;
+    width: 20%;
+
+  }
+}
+
 </style>
 </head>
 <body>
+  <div id="name"><h3>CIT261 Irina Kukla</h3></div>
   <header>
     <nav>
     <div id="refShades" onclick="ShowShades()">Shades</div>
@@ -239,31 +285,31 @@ table {
      
       <div id="head23" style="display:none;"><h2>Shades</h2></div>
           <div id="body23" style="display:none;">
-<div id ="output31">1</div><br>
-<div id ="output32">2</div><br>
-<div id ="output33">3</div><br>
-<div id ="output34">4</div><br>
-<div id ="output35">5</div><br>
-<div id ="output36">6</div><br>
-<div id ="output37">7</div><br>
-<div id ="output38">8</div><br>
-<div id ="output39">9</div><br>
-<div id ="output40">10</div><br>
-<div id ="output401">10</div><br>
+<div id ="output31"></div><br>
+<div id ="output32"></div><br>
+<div id ="output33"></div><br>
+<div id ="output34"></div><br>
+<div id ="output35"></div><br>
+<div id ="output36"></div><br>
+<div id ="output37"></div><br>
+<div id ="output38"></div><br>
+<div id ="output39"></div><br>
+<div id ="output40"></div><br>
+<div id ="output401"></div><br>
           </div>
       <div id="head24" style="display:none;"><h2>Lightness</h2></div>
           <div id="body24" style="display:none;">
-<div id ="output41">1</div><br>
-<div id ="output42">2</div><br>
-<div id ="output43">3</div><br>
-<div id ="output44">4</div><br>
-<div id ="output45">5</div><br>
-<div id ="output46">6</div><br>
-<div id ="output47">7</div><br>
-<div id ="output48">8</div><br>
-<div id ="output49">9</div><br>
-<div id ="output50">10</div><br>
-<div id ="output501">10</div><br>
+<div id ="output41"></div><br>
+<div id ="output42"></div><br>
+<div id ="output43"></div><br>
+<div id ="output44"></div><br>
+<div id ="output45"></div><br>
+<div id ="output46"></div><br>
+<div id ="output47"></div><br>
+<div id ="output48"></div><br>
+<div id ="output49"></div><br>
+<div id ="output50"></div><br>
+<div id ="output501"></div><br>
 </div>
   </main>
   <footer></footer>
